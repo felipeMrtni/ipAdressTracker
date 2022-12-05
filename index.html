@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | IP Address Tracker</title>
@@ -15,17 +16,24 @@
   </style>
 </head>
 <body>
+  <div class="blue-box">
+    <img src="./images/pattern-bg.png" alt="">
+  </div>
+  <div class="map-box">
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
+  </div>
+  <div class="text-box">
+    <div class="header">
+      <h1 class="title">IP Address Tracker</h1>
+    </div>
+    <input class="ip-btn" type="submit" placeholder="Search for any IP address or domain">
+    <div class="info-box">
+      <div class="info">IP Address</div>
+      <div class="info">IP Location</div>
+      <div class="info">IP Timezone  / UTC</div><!-- add offset value dynamically using the API -->
+      <div class="info">IP ISP</div>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
