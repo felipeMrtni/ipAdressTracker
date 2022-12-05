@@ -15,28 +15,35 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <div class="blue-box">
-    <img src="./images/pattern-bg.png" alt="">
-  </div>
-  <div class="map-box">
-
-  </div>
-  <div class="text-box">
-    <div class="header">
-      <h1 class="title">IP Address Tracker</h1>
+  <body>
+    <div class="container">
+      <div class="image-box">
+        <img class="image" src="./images/pattern-bg.png" alt="">
+      </div>
+      <div class="map-box">
+        
+      </div>
+      <div class="text-box">
+        <div class="header">
+          <h1 class="title">IP Address Tracker</h1>
+        </div>
+        <div class="input-box">
+          <input class="ip-btn" type="submit" placeholder="Search for any IP address or domain">
+        </div>
+        <div class="info-box">
+          <div class="info" id="ipAdress">
+            <p>IP Address</p>
+            
+          </div>
+          <div class="info">IP Location</div>
+          <div class="info">IP Timezone  / UTC</div><!-- add offset value dynamically using the API -->
+          <div class="info">IP ISP</div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
     </div>
-    <input class="ip-btn" type="submit" placeholder="Search for any IP address or domain">
-    <div class="info-box">
-      <div class="info">IP Address</div>
-      <div class="info">IP Location</div>
-      <div class="info">IP Timezone  / UTC</div><!-- add offset value dynamically using the API -->
-      <div class="info">IP ISP</div>
-    </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
