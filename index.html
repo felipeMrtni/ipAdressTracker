@@ -10,13 +10,10 @@
   <link rel="stylesheet" href="./assets/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <!-- Google Maps ---------------------------------------- -->
+  
   <title>Frontend Mentor | IP Address Tracker</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
   <body>
     <div class="container">
@@ -25,15 +22,21 @@
         <!-- <img class="image" src="./images/pattern-bg.png" alt=""> -->
       </div>
       <!-- MAP BOX ---------------------------------------------- -->
-      <div class="map"></div>
+      <div id="map"></div>
+      <div id="message"></div>
       <!-- TEXT BOX --------------------------------------------- -->
       <div class="text-box">
         <div class="header">
           <h1 class="title">IP Address Tracker</h1>
         </div>
         <div class="input-box">
-          <input class="ip-input" type="text" placeholder="Search for any IP address or domain">
-          <span class="ip-btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></span>
+          <input class="input-ip" type="text" placeholder="Search for any IP address or domain">
+          <span id="ip-btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></span>
+          <div class="position-box">
+            <input class="input-pos" id="lat" type="text" placeholder="Type the latitude" value="">
+            <input class="input-pos" id="lon" type="text" placeholder="Type the longitude" value="">
+            <span id="pos-btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></span>
+          </div>
         </div>
         <div class="info-box">
           <div class="info" id="ipAdress">
@@ -54,12 +57,8 @@
           </div>
         </div>
       </div>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </div>
     </div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2YOvSd_wMDbhhOx05e7P_jbtgXoPsZIU&callback=initMap"></script>
     <script src="./assets/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2YOvSd_wMDbhhOx05e7P_jbtgXoPsZIU&callback=initMap"></script>
   </body>
 </html>
