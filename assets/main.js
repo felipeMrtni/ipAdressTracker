@@ -28,9 +28,8 @@ function getLocation() {
         // latitude and longitude chosen by user
         lat = +document.querySelector("#lat").value;
         lon = +document.querySelector("#lon").value;
-        initMap(lat, lon)
+        initMap()
     });
-    initMap(lat, lon)
 }
 
 function initMap() {
@@ -43,4 +42,21 @@ function initMap() {
         map: map
     });
 }
+
+const ipRef = document.querySelector("#ipAdress");
+const locationRef = document.querySelector("#location");
+const timezoneRef = document.querySelector("#timezone");
+const ispRef = document.querySelector("#isp");
+
+fetch('http://ip-api.com/json/?fields=61439')
+    .then((res) => res.json())
+        .then((res) => {
+            ipRef.textContent = res.query;
+            locationRef.textContent = res.city +", "+ res.region +", "+ res.zip;
+            timezoneRef.textContent = res.timezone;
+            ispRef.textContent = res.isp;
+        });
+
+
+
 getLocation();
