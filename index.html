@@ -9,8 +9,14 @@
   <link rel="stylesheet" href="./assets/reset.css">
   <link rel="stylesheet" href="./assets/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <!-- Google Maps ---------------------------------------- -->
+  <!-- Leaflet map ---------------------------------------- -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+  <!-- Leaflet javascript----------------------------------- -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
   
   <title>Frontend Mentor | IP Address Tracker</title>
 
@@ -30,12 +36,12 @@
           <h1 class="title">IP Address Tracker</h1>
         </div>
         <div class="input-box">
-          <input class="input-ip" type="text" placeholder="Search for any IP address or domain">
+          <input class="input-ip" type="text" placeholder="Search for any IP address or domain" value="192.212.174.101">
           <span id="ip-btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></span>
           <div class="position-box">
-            <input class="input-pos" id="lat" type="text" placeholder="Type the latitude" value="">
+            <!-- <input class="input-pos" id="lat" type="text" placeholder="Type the latitude" value="">
             <input class="input-pos" id="lon" type="text" placeholder="Type the longitude" value="">
-            <span id="pos-btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></span>
+            <span id="pos-btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></span> -->
           </div>
         </div>
         <div class="info-box">
@@ -58,7 +64,9 @@
         </div>
       </div>
     </div>
-    <script src="./assets/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2YOvSd_wMDbhhOx05e7P_jbtgXoPsZIU&callback=initMap"></script>
+    <!-- <script src="./assets/main.js"></script> -->
+    <script src="./assets/app.js"></script>
+    <!-- <script async defer src="https://geo.ipify.org/api/v2/country,city?apiKey=at_ltOtYQVL1vgmyazoF3rQORM6Hkew5&ipAddress=8.8.8.8"></script> -->
   </body>
 </html>
